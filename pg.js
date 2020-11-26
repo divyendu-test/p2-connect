@@ -1,10 +1,10 @@
 const pg = require('pg')
 
 const pg1 = new pg.Client(
-  `postgresql://root:prisma1@localhost:6433/basic-blog?schema=public&pgbouncer=true`,
+  `postgresql://root:prisma@localhost:6433/basic-blog?schema=public&pgbouncer=true`,
 )
 const pg2 = new pg.Client(
-  `postgresql://root:prisma1@localhost:6433/basic-blog?schema=public&pgbouncer=true`,
+  `postgresql://root:prisma@localhost:6433/basic-blog?schema=public&pgbouncer=true`,
 )
 
 async function main() {
