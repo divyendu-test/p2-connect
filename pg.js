@@ -8,7 +8,7 @@ const pg2 = new pg.Client(
 )
 
 async function main() {
-  const SLEEP = 1
+  const SLEEP = 20
 
   await pg1.connect()
   console.log(`1st connect`)

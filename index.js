@@ -4,7 +4,7 @@ const prisma1 = new PrismaClient()
 const prisma2 = new PrismaClient()
 
 async function main() {
-  const SLEEP = 1
+  const SLEEP = 20
 
   await prisma1.$connect()
   console.log(`1st connect`)

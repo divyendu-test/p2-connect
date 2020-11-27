@@ -21,7 +21,7 @@ const pool1 = new Pool(config)
 const pool2 = new Pool(config)
 
 async function main() {
-  const SLEEP = 1
+  const SLEEP = 20
 
   const client1 = await pool1.connect()
   console.log(`1st connect`)

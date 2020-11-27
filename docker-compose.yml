@@ -4,7 +4,7 @@ services:
   postgres:
     image: divyenduz/postgres-with-data:0.0.2
     restart: always
-    command: postgres -c 'max_connections=1' -c 'superuser_reserved_connections=0'
+    command: postgres -c 'max_connections=1' -c 'superuser_reserved_connections=0' -c 'log_statement=all'
     ports:
       - 5433:5432
     volumes:
